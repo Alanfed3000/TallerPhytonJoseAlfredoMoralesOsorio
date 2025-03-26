@@ -1,0 +1,9 @@
+{
+  "personas:":[
+    {
+      "nombre": "Federico Peluche" ,
+      "edad": 45,
+      "estado": "Puebla"
+    },
+  ]
+}

@@ -8,3 +8,4 @@ if __name__ == '__main__':
     print(f"la suma es {suma(15,22)}")
 
     print(f"la suma del arreglo es {sumaArreglo([5,6,8,9,7])}")
+
