@@ -1,0 +1,45 @@
+{
+  "Usuarios": [
+    {
+
+      "Id": 1,
+      "Nombre":"Mauricio Gomez",
+      "Edad": 21,
+      "RFC": "ACAM234567RTG"
+    },
+    {
+
+      "Id": 2,
+      "Nombre": "Josue Morales",
+      "Edad": 20,
+      "RFC": "EAME060904RFG"
+    },
+    {
+      "Id": 3,
+      "Nombre": "Alfredo Morales",
+      "Edad": 20,
+      "RFC": "DRBP459812RTF"
+    },
+    {
+
+      "Id": 4,
+      "Nombre": "Clara Osorio",
+      "Edad": 15,
+      "RFC": "MIME567892WER"
+    },
+    {
+
+      "Id": 5,
+      "Nombre": "Tania Morales",
+      "Edad": 17,
+      "RFC": "MAME090805GHE"
+    },
+    {
+
+      "Id": 6,
+      "Nombre": "Corinna Itzel",
+      "Edad": 43,
+      "RFC": "MAME090805GHE"
+    }
+  ]
+}

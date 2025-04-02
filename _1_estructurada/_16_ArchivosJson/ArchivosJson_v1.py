@@ -1,15 +1,24 @@
 import json
 
 if __name__ == '__main__':
-# Version corta de abrir un archivoo Jason
-# Abre el archivo Json en modo de lectura y with se encarga de
-with open("datos.jason", "r", encoding="utf-8") as archivo:
-    datos = json.load(archivo) # Carga el contenido del archivo JSON
+    try:
+        with open("data.json", "r", encoding="utf-8") as archivo:
+            datos = json.load(archivo)
 
-# Muestra el contenido del JSON
-for persona in datos["personas"]:
-    print("Nombre:", persona["nombre"])
-    print("Edad:", persona["edad"])
-    print("Ciudad:", persona["ciudad"])
-    print("Estado:", persona["estado"])
-    print("----------------------------------:") # Linea en blanco para
+        for persona in datos:
+            print("Nombre:", persona["Nombre"])
+            print("Edad:", persona["Edad"])
+            try:
+                print("RFC:", persona["RFC"])
+            except KeyError:
+                print("RFC: No especificado")
+            print("ID:", persona["id"])
+            if persona["Edad"]>=18:
+              print(f'{persona["Nombre"]} es mayor de edad')
+            else:
+              print(f'{persona["Nombre"]} es menor de edad')
+            print("----------------------------------:")
+    except FileNotFoundError:
+        print("Error: El archivo 'data.json' no fue encontrado.")
+    except json.JSONDecodeError:
+        print("Error: El archivo 'data.json' no tiene un formato JSON válido.")
